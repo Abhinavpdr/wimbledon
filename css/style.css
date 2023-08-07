@@ -1,0 +1,45 @@
+header{
+    height: 657px;
+    overflow: hidden;
+    background-attachment: fixed;
+    justify-content: center;
+    display: flex;
+    
+}
+*{
+    position: relative;
+}
+.logo-div{
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+}
+.logo-div h3{
+    font-size: 1rem !important ;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.877) 1px 0 10px;
+}
+/*.................video...............*/
+.video{
+    position: fixed;
+    margin-left: -50% !important;
+}
+/*.................NAVBAR...............*/
+.navbar{
+    z-index: 9;
+}
+.nav-item{
+    font-size: 1.4rem;
+}
+.nav-link{
+    color: #16b97b !important;
+}
+.nav-link:hover{
+    color: #007649;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /*.................content...............*/

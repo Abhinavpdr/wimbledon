@@ -1,0 +1,43 @@
+:root{
+    --green-clr:#007649;
+}
+.abt-content p{
+    font-size: 20px;
+    
+}
+.abt-content span{
+    font-weight: bold;
+}
+
+.img-div{
+    justify-content: center;
+    display: flex;
+}
+.abt-content img{
+    width: 70%;
+}
+.content-1 a{
+    color: var(--green-clr);
+}
+.footer-div{
+    padding: 0;
+}
+
+@media screen and (max-width:600px) {
+    .footer-div{
+        height: 560px !important;
+    }
+    .abt-content{
+        height: auto !important;
+    }
+}
+@media screen and (max-width:930px) {
+   
+    .footer-div{
+        height: 840px;
+    }
+    .abt-content p{
+        font-size: 17px;
+        
+    }
+}

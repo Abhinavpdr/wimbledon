@@ -1,0 +1,90 @@
+.container:nth-child(2) p{
+  font-size: 20px;
+}
+@media only screen and (max-width:930px) {
+    body{
+        height: 100rem;
+    }
+    .container:nth-child(2) p{
+      font-size: 17px;
+    }
+    
+}
+:root{
+    --green-clr:#007649;
+}
+.form-div{
+    position: relative;
+    height: auto;
+}
+.login-box {
+    width: 100%;
+  padding: 40px;
+
+  box-sizing: border-box;
+ 
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 30px;
+  border: 2px solid #979797;
+  outline: none;
+  background: transparent;
+  border-radius: 7px;
+}
+.login-box .user-box input:hover{
+    border: 2px solid var(--green-clr);
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #979797;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -17px;
+  left: 24px;
+  color: var(--green-clr);
+  font-size: 12px;
+  background-color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0;
+}
+input[type=checkbox] {
+    accent-color: var(--green-clr);
+  }
+  .submit-div{
+    display: flex;
+    justify-content: center;
+  }
+  input[type=Submit] {
+    border-radius: 7px;
+    border: 0;
+    background-color: var(--green-clr);
+    color: white;
+    width: 200px;
+  }
+
+
+
+
+
+
+

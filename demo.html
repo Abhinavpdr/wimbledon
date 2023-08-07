@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wimbledon</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style-demo.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+  <style>
+
+  body {
+    margin: 0;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .left-side-menu{
+    opacity: 0;
+        transform: translateX(-34px);
+  }
+  .hover-div{
+    cursor: pointer;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    
+    color: #0c8557;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-size: 21px;
+  }
+  .ytp-impression-link{
+    visibility: hidden !important;
+    display: none !important;
+}
+
+  #navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky .nav-img{
+    visibility: visible;
+  }
+  .sticky .left-side-menu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  .nav-img{
+    visibility: hidden;
+  }
+
+  .sticky-else{
+    margin-top: none;
+  }
+.left-side-menu{
+  background-color: #04AA6D;
+}
+ 
+  .top-nav{
+    top: 21px !important;
+    background-color: red;
+  }
+  </style>
+ 
+  
+  <div class="header">
+    <div>
+    <video class="video" autoplay muted loop id="myVideo" style="width: 100%;position: fixed;margin-left: -50%;">
+      <source src="assets/bg video 2.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <!--text above video-->
+    <div class="row header-text-div">
+      <div class="col-md-4"></div>
+      <!--logo-->
+      <div class="col-md-4 logo-md">
+        <div style="display: flex;">
+           <div class="logo-div">
+           <img src="assets/images/Wimbledon.svg" alt="" srcset="" style="width:60px" class="logo">
+           <h3>3 JULY - 16 JULY 2023</h3>
+           
+         </div></div>
+        
+           </div>
+         <!--/logo-->
+
+      <div class="col-md-4 ibm-div">
+        <div class="ibm">
+        <p>Login</p>
+        <img src="assets/images/ibm-logo.png" alt="" srcset="">
+      </div>
+          <!--weather->
+      <div class="weather" alt="weather">
+        <span class="icon">
+          <img src="https://assets.wimbledon.com/images/weather/wc_png/28.png" width="29" height="29" alt="weather">
+        </span>
+        <span class="description h3">Mostly Cloudy</span>
+      </div>
+      <--/weather-->
+      <!--latest-->
+      <div class="court-status">
+        <div class="status-0 desc h5 white">
+          <a title="link to Latest Video Highlights" alt="link to Latest Video Highlights" role="link" tabindex="0" class="white" href="/en_GB/video/highlights.html">
+            <span aria-hidden="true">Latest Video Highlights</span>
+          </a>
+        </div>
+        <div class="status-1 desc h5 white">
+          <a title="link to Ticket Information" alt="link to Ticket Information" role="link" tabindex="0" class="white" href="/en_GB/tickets/index.html">
+            <span aria-hidden="true">Ticket Information</span>
+          </a>
+        </div>
+        <div class="status-2 desc h5 white">
+          <a title="link to Visit The Online Shop" href="https://shop.wimbledon.com/?utm_source=homepage%2Fbelow_weather_text&amp;utm_medium=.com&amp;utm_campaign=homepage&amp;utm_id=permanent" class="white external" role="link" tabindex="0" target="_blank">
+            <span aria-hidden="true">Visit The Online Shop</span>
+          </a>
+        </div>
+      </div>
+      <div class="rolex-clock" tabindex="-1" aria-hidden="true"><div class="clock"><iframe src="https://assets.wimbledon.com/static/rolex/desktop/rolex.html" scrolling="NO" frameborder="NO" title="rolex" tabindex="-1" aria-hidden="true" role="none" style="width: 250px; height: 70px; border: 0px; margin: 0px; padding: 0px; overflow: hidden; display: block;"></iframe></div></div>
+      <!--/latest-->
+      </div>
+      
+    </div>
+    <!--/text above video-->
+    
+    </div>
+    
+  </div>
+  
+  <nav class="navbar  navbar-expand-lg" style="background-color: rgb(255, 255, 255);" id="navbar">
+      
+    <div class="container-fluid">
+      <img src="assets/images/Wimbledon.svg" width="50px" height="auto" alt="" class="nav-img"><h3 style="font-weight: bold;">Wimbledon</h3>
+        <button style="border-color: white ;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse mx-auto " id="navbarSupportedContent">
+         
+            
+          <ul class="navbar-nav mb-lg-0 menu1">
+            <li class="nav-item menu">
+              <a class="nav-link"  href="demo.html">Home</a>
+            </li>
+            <li class="nav-item menu">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+            <li class="nav-item menu">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item menu">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item menu">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              
+              
+           
+          </ul>
+          <a href="#" class="login-menu nav-img"><i class="fa-solid fa-cart-shopping" ></i></a>
+          
+        </div>
+
+      
+      
+       
+      </div>
+      <div style="background-color: rebeccapurple;" class="left-side-menu " id="side-menu">
+      <div><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></div>
+        <div><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></div>
+        <div><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></div>
+        <div><a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></div>
+        <div><a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></div>
+       </div>
+  </nav>
+  
+  <div class="content container-fluid " style="padding-left: 0;padding-right: 0;">
+   
+    <section class="content-1" >
+      <div ><h3 class="welcome">Welcome</h3></div>
+      <div><h4>To</h4></div>
+      <div class="reveal"><h1> <span>The</span>  LARGEST TENNIS TOURNAMENT</h1></div>
+    </section><br><br>
+
+
+
+    <section class="content-2 " style="padding-left: 0;padding-right: 0;">
+      <div class="container-fluid" style="padding-left: 0;padding-right: 0;">
+        <div class="content-2-card">
+          <div class=" content-2-txt " style="background: url('assets/images/content-2-img2.png');background-repeat: no-repeat;background-size: contain;background-position: right;"><p class="reveal"> <span class="spn-bold"> Wimbledon Championships 2023</span> is a Grand Slam tennis tournament that is taking place at the All England Lawn Tennis and Croquet Club in Wimbledon, London, United Kingdom.<span class="text"> Wimbledon is the only major still played on grass, the traditional tennis playing surface.  Also, it is the only Grand Slam that retains a night-time curfew </span></p></div>
+          <!--div class="content-2-img"><img src="assets/images/content-2-img2.png" alt="" srcset=""></div-->
+        </div>
+      </div>
+    </section><br><br><br><br>
+
+
+
+<!--...........news...........-->
+    <section class="content-3 ">
+      <div class="container">
+        <h2 class="content-h">NEWS</h2>
+        <div class="row news-div">
+          <div class="col-md-8">
+           <div>
+            <div class="slideshow-container border-radius ">
+
+              
+              
+              <div class="mySlides ">
+                <div class="numbertext ">Latest News</div>
+                <img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_20230717_champsdinner_BQ105518-326204_3672.jpg" style="width:100%">
+                <div class="text">Farewell to Chairman Ian Hewitt
+                  <p>Hewitt's tenure might have been short but his legacy is long</p>
+                </div>
+              </div>
+              
+              <div class="mySlides ">
+                <div class="numbertext">Latest News</div>
+                <img src="https://photo-assets.wimbledon.com/images/pics/large/b_20230717_champsdinner_AB208809-326135_3669.jpg" style="width:100%">
+                <div class="text">The 2023 Wimbledon Champions Dinner
+                  <p>Highlights from The 2023 Wimbledon Champions Dinner</p>
+                </div>
+              </div>
+
+              <div class="mySlides  ">
+                <div class="numbertext">Latest News</div>
+                <img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_20230627_vwilliams_CK3_1900-250452_114.jpg" style="width:100%">
+                <div class="text">Warm Wimbledon welcomes
+                  <p>A host of well-known faces walked through the gates of the AELTC this year</p>
+                </div>
+              </div>
+              
+              </div>
+              
+              <div style="text-align:center;display: none;" >
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+           </div>
+           <script src="slider_script.js"></script>
+           <div class="row">
+            <div style="width: 50%;float:left;padding-top: 16px;" class="col-md-6 border-radius"><div class="hover-div"><img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_230716_00231_alcaraz_tl207741-325190.jpg" alt="" width="100%" srcset="" class="border-radius img-hover"><p>New star shines on Centre Court</p></div></div>
+            <div style="width: 50%;padding-top: 16px;" class="col-md-6 border-radius"><div class="hover-div"><img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_20230715_djokalca_FE2_3604-310091_2416.jpg" alt="" width="100%" srcset="" class="img-hover">
+              <p>New star shines on Centre Court</p></div></div>
+           </div>
+
+
+          </div>
+          <div class="col-md-4 news-right-div" >
+            <div class="row">
+            <div class="border-radius col-sm-6 col-md-12"><div class="hover-div"><img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_20230703_grounds_BBB00541_659.jpg" width="100%" alt="" srcset="" class="img-hover" ><p>AELTC Update - Saturday 15 July</p></div>
+                     
+          </div>
+            <div class="border-radius col-sm-6 col-md-12 "><div class="hover-div"><img src="https://photo-assets.wimbledon.com/images/pics/thumbs/m_20230710_duskdawn_ZZ000329-277724_1_1906.jpg" width="100%" alt="" srcset="" class="img-hover"><p>New star shines on Centre Court</p></div></div>
+            </div>
+            <div style="display: flex;align-items: center;justify-content: center;" class="news-button-div">
+              
+              <div><button style="font-size: 25px;"> More</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br><br>
+    <br>
+<!--.........../news...........-->
+
+
+
+
+
+<!--...........content4(score board)...........-->
+<section class="content-4">
+<p class="p-1">SUN 16 JULY 2023 21:27 BST</p>
+<h2 >LATEST RESULTS</h2><br>
+
+  <div class="container score-div" >
+    <div class="row">
+      <div class="col-md-6">
+        <div class="score-card">
+          <div class="mb-30"><p style="color: #616161ad;">MEN'S SINGLE <span style="float: right;">FINAL</span></p></div>
+          <div><p class="name"><img class="flag" alt="ESP" src="//assets.wimbledon.com/images/flags/ESP_sm.gif">
+            C. Alcaraz 
+            <span class="num">
+              <i class="fa-solid fa-check"></i>
+               1  7  6  3  6</span></p></div>
+
+            <div class="mb-30"><p class="name"><img alt="SRB" src="//assets.wimbledon.com/images/flags/SRB_sm.gif">N. Djokovic 
+              <span class="num"><i class="fa-solid fa-check" style="color: white;">
+              </i> 1  6  1  3  4</span></p></div>
+              <p style="color: #616161ad;">DURATION: 4:43</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="score-card">
+          <div class="mb-30"><p style="color: #616161ad;">LADIES'S SINGLE <span style="float: right;">FINAL</span></p></div>
+          <div><p class="name"><img alt="CZE" src="//assets.wimbledon.com/images/flags/CZE_sm.gif">
+            M. Vondrousova 
+            <span class="num">
+              <i class="fa-solid fa-check"></i>
+               1  7  6  3  4</span></p></div>
+
+            <div class="mb-30"><p class="name"><img alt="TUN" src="//assets.wimbledon.com/images/flags/TUN_sm.gif">O. Jabeur 
+              <span class="num"><i class="fa-solid fa-check" style="color: white;">
+              </i> 3  5  1  3  4</span></p></div>
+              <p style="color: #616161ad;">DURATION: 4:43</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section><br><br>
+<!--.........../content4(score board)...........-->
+
+
+
+
+<!--...........content5(shop)..........-->
+<section class="content-5">
+  <div class="container">
+    <h2 class="content-h">OFFICIAL SHOP</h2>
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <p class="reveal">Wimbledon Online Shop which has been newly developed to offer the best and widest experience of Official Merchandise and to tell our story about how we work to create collections ahead of each Championships. Our approach is to design and develop The Wimbledon Collection from right here in London SW19, covering almost 400 different products, ranging from beautifully crafted yet practical sports performance, to lifestyle collections and gifting.</p>
+         <div>
+        <button style="margin-bottom: 30px;">Order now</button>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="shop">
+          <section id="tranding" >
+           
+            <div class="container">
+              <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/k/i/kids-championships-logo-cap-white-23280069-front_1.png" alt="Tranding">
+                    </div>
+                   
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/b/r/brisa-mens-panama-preset-mens-panama-detail.jpg" alt="Tranding">
+                    </div>
+                    
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/p/o/polo-ralph-lauren-striped-belt-405872157001-item.png" alt="Tranding">
+                    </div>
+                    
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/p/o/polo-ralph-lauren-canvas-duffle-3616851406945-back.png" alt="Tranding">
+                    </div>
+                   
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/b/a/babolat-propulse-blast-all-court-mens-trainers-white-green-30s22867-item.png" alt="Tranding">
+                    </div>
+                    
+                  </div>
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+              
+                  <!-- Slide-end -->
+                  <!-- Slide-start -->
+                  <div class="swiper-slide tranding-slide">
+                    <div class="tranding-slide-img">
+                      <img src="https://shop.wimbledon.com/media/catalog/product/cache/e65fa756c1387ff59059aaeed1da9787/w/i/wimbledon-walking-umbrella-23590038-item.png" alt="Tranding">
+                    </div>
+                    
+                  </div>
+                  <!-- Slide-end -->
+                </div>
+        
+                <div class="tranding-slider-control" >
+                  <div class="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+        
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<!--..........shop..............-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="shop.js"></script>
+<!--............../shop.........-->
+<br><br>
+<!--.........../content5(shop)..........-->
+
+
+
+
+
+<!--...........content6..........-->
+<section class="content-6">
+  <div class="container">
+    <h2 class="content-h">MATCH HIGHLIGHTS</h2>
+   <div class="row">
+    <div class="col-md-6">
+      <iframe src="https://www.youtube.com/embed/B3c6ESfLUVc" ></iframe>
+    </div>
+    <div class="col-md-6">
+      <iframe  src="https://www.youtube.com/embed/DaFP6evkI0g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+   </div>
+  </div>
+</section><br><br><br>
+<!--.........../content6..........-->
+
+
+
+
+
+
+
+<!--...........content7(ticket)..........-->
+<section class="content-7">
+  <div class="container">
+    <div class="row ticket-card">
+      <div class="col-md-6 col-sm-12 ">
+        <img class="ticket-img-1" src="https://ausopen.com/sites/default/files/styles/420x/public/202301/18/pcarrenobusta.png?itok=KpfF1Y9g" alt="">
+        <img class="ticket-img-2" src="https://www.internazionalibnlditalia.com/wp-content/uploads/player/fils_gladiator_f0f1.png" alt="">
+        <img class="ticket-img-3" src="https://ausopen.com/sites/default/files/styles/420x/public/202301/17/rnadal.png?itok=ZAo-_Hxj" alt="">
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div>
+         <p> entry opening in june 2023. Register to find out the latest information on ticketing for The Championships 2024.</p>
+         <p><i class="fa-solid fa-calendar" style="color: #ffffff;"></i> june - september 2023</p>
+         <p><button>Buy tickets</button> <button>Schedule</button></p>
+       </div>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+<!--.........../content7(ticket)..........-->
+
+
+
+
+
+<!--...........content8(Partners)..........-->
+<section class="content-8">
+  <div class="container-fluid h-100">
+    <h3 style="text-align: center;">Official Partners</h3>
+    <div class="row align-items-center h-100">
+      <div class="container rounded">
+  
+        <div class="slider">
+          <div class="logos">
+           
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/748px_slazenger.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/748px_IBM.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/lansonlogo2021.jpg"></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/large/b_polo_ralph.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/evianlogo.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/Barclays_Eagle-Wordmark_RGB_Cyan_Medium.png" ></i>
+          </div>
+          <div class="logos">
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/jaglogo.jpg"></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/Amex_loho.png" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/oppologo.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/sipsmith.png" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/thumbs/w_vodafone2.jpg" ></i>
+            <i class="fab  fa-4x"><img src="https://photo-assets.wimbledon.com/images/pics/misc/babolatlogo.png" ></i>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+<!--.........../content8(Partners)..........-->
+
+
+
+
+
+
+
+
+ 
+ 
+
+  <!--...........footer..........-->
+<section>
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid " style="padding: 0;">
+  <!-- Footer -->
+  <footer class="text-center text-white footer-div footer-div-home" style="background-color: #007649">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              If your query relates to ticketing, please ensure you have checked our <a href="https://help.wimbledon.com/hc/en-gb">help centre</a>  before contacting us.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-2 footer-logo">
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2);font-size: 18px;"
+         >
+         © Copyright IBM Corp., AELTC 2023. All Rights reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+</section>
+<!--.............../footer........-->
+</div>
+
+
+  <script src="script.js"></script>
+  <script>
+ 
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+      if(window.scrollY > 500){
+        navbar.classList.add("tp-nav")
+      }
+    } else {
+      navbar.classList.remove("sticky");
+      navbar.classList.remove("top-nav");
+    }
+  }
+  window.onscroll = function() {myFunction()};
+  </script>
+  
+  </body>
+  </html>
+  
+
+</body>
+</html>
